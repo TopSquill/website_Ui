@@ -65,7 +65,7 @@ const AboutUs = () => {
           <div className="w-full lg:w-5/12 md:w-full flex items-center">
             <div className="">
               <img
-                src="../../public/assets/why.jpg"
+                src="https://64f27a657a778c22a19903be--topsqill.netlify.app/assets/img/counts-img.jpg"
                 alt="Why Choose Us"
                 className="w-full h-3/4 object-cover rounded-xl"
               />
