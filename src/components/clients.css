@@ -1,0 +1,10 @@
+/* Add smooth transition for slide animation */
+.slick-slide {
+    transition: transform 0.5s ease-in-out; /* Adjust the transition duration as needed */
+  }
+  
+  /* Add a smooth hover effect */
+  .slick-slide:hover {
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+  }
+  
