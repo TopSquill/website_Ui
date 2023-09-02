@@ -32,7 +32,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <section id="why-choose" className="py-10">
+    <section id="why-choose" className="p-10">
       <div className="container mx-auto m-10">
         <div className="flex flex-wrap">
           <div className="w-full lg:w-7/12 lg:pr-10 flex flex-col justify-center ">
@@ -47,7 +47,7 @@ const AboutUs = () => {
                 compliance.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 m-4">
               {countData.map((data, index) => (
                 <div
                   key={index}
@@ -62,12 +62,12 @@ const AboutUs = () => {
               ))}
             </div>
           </div>
-          <div className="w-full lg:w-5/12 md:w-full flex items-center">
+          <div className="w-full lg:w-5/12 md:w-full flex items-center p-4 sm:p-4">
             <div className="">
               <img
                 src="https://64f27a657a778c22a19903be--topsqill.netlify.app/assets/img/counts-img.jpg"
                 alt="Why Choose Us"
-                className="w-full h-3/4 object-cover rounded-xl"
+                className="w-full h-3/4 object-cover rounded-xl "
               />
             </div>
           </div>
