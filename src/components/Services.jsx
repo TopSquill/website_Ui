@@ -11,6 +11,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import SectionHeading from "./SectionHeading";
 import LeftBgImage from "./LeftBgImage";
 import RightBgImage from "./RightBgImage";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const dummyServiceEntries = [
@@ -95,27 +96,29 @@ const Services = () => {
 
         <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-12 xl:grid-cols-3 xl:gap-10 m-20">
           {dummyServiceEntries.map((service, i) => (
-            <div
-              key={service.id}
-              className="bg-E3F2FC p-4 md:p-10 rounded-lg shadow-md transition-transform transform hover:-translate-y-1 hover:shadow-lg relative text-center cursor-pointer group hover:bg-blue-200"
-            >
-              <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-68bbf9 p-3 rounded-lg group-hover:bg-indigo-600">
-                {service.icon}
-              </div>
-              <h1 className="text-xl font-semibold capitalize text-gray-700 mt-6 group-hover:text-indigo-700">
-                {service.title}
-              </h1>
-              <p className="text-sm text-gray-500 mt-2 group-hover:text-black">
-                {service.description}
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center mt-2 text-sm font-semibold capitalize text-blue-500 transition-colors duration-300 group-hover:text-blue-700"
+            <Link to="/service/afcsc">
+              <div
+                key={service.id}
+                className="bg-E3F2FC p-4 md:p-10 rounded-lg shadow-md transition-transform transform hover:-translate-y-1 hover:shadow-lg relative text-center cursor-pointer group hover:bg-blue-200"
               >
-                <span className="mr-1">read more</span>
-                <AiOutlineArrowRight size={16} />
-              </a>
-            </div>
+                <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-68bbf9 p-3 rounded-lg group-hover:bg-indigo-600">
+                  {service.icon}
+                </div>
+                <h1 className="text-xl font-semibold capitalize text-gray-700 mt-6 group-hover:text-indigo-700">
+                  {service.title}
+                </h1>
+                <p className="text-sm text-gray-500 mt-2 group-hover:text-black">
+                  {service.description}
+                </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center mt-2 text-sm font-semibold capitalize text-blue-500 transition-colors duration-300 group-hover:text-blue-700"
+                >
+                  <span className="mr-1">read more</span>
+                  <AiOutlineArrowRight size={16} />
+                </a>
+              </div>
+            </Link>
           ))}
         </div>
       </div>

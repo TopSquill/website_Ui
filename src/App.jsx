@@ -9,6 +9,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
+import ProjectDetails from "./pages/ProjectDetails";
+import ServiceDetails from "./pages/ServiceDatails";
 
 function App() {
   return (
@@ -19,8 +21,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
+          <Route path="/service/:id" element={<ServiceDetails />} />
           <Route path="/blogs" element={<BlogPage />} />
-          <Route path="/contact" element={<ContactUs />} />{" "}
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
         <Footer />
