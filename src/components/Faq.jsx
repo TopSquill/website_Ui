@@ -31,7 +31,7 @@ const Faq = () => {
           {Array.from({ length: 4 }).map((_, i) => (
             <div
               key={i}
-              className="cursor-pointer rounded-md border border-gray-400 transition-all duration-200"
+              className="cursor-pointer rounded-md border border-gray-400 transition-all duration-200 bg-E3F2FC"
             >
               <button
                 type="button"
@@ -70,8 +70,8 @@ const Faq = () => {
           </a>
         </p>
       </div>
-      <LeftBgImage />
-      <RightBgImage />
+      {/* <LeftBgImage />
+      <RightBgImage /> */}
     </div>
   );
 };

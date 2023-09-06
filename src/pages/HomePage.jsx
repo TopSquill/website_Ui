@@ -20,6 +20,7 @@ const HomePage = () => {
       <Hero />
       <Services />
       <Projects />
+
       <Testimonial />
       <Clients />
       <Faq />

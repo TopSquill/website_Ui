@@ -107,8 +107,8 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <LeftBgImage />
-      <RightBgImage />
+      {/* <LeftBgImage />
+      <RightBgImage /> */}
     </section>
   );
 };

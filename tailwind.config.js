@@ -5,6 +5,8 @@ export default {
     extend: {
       backgroundColor: {
         f9eaf6: "#f9eaf6",
+        E3F2FC: "#E3F2FC",
+        "68bbf9": "#68bbf9",
       },
     },
   },

@@ -92,7 +92,7 @@ const Blogs = () => {
           <Slider {...settings} className="w-full">
             {dummyCards.map((card) => (
               <div key={card.id} className="px-4 py-4">
-                <div className="bg-white md:pb-10 rounded-lg shadow-md transition-transform transform hover:-translate-y-1 hover:shadow-lg relative text-center cursor-pointer group hover:bg-f9eaf6">
+                <div className="bg-white md:pb-10 rounded-lg shadow-md transition-transform transform hover:-translate-y-1 hover:shadow-lg relative text-center cursor-pointer group hover:bg-E3F2FC">
                   <img
                     src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJsb2d8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
                     alt="Laptop"
@@ -116,8 +116,8 @@ const Blogs = () => {
           </Slider>
         </div>
       </div>
-      <LeftBgImage />
-      <RightBgImage />
+      {/* <LeftBgImage />
+      <RightBgImage /> */}
     </section>
   );
 };
