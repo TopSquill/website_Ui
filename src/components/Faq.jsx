@@ -18,7 +18,7 @@ const Faq = () => {
     <div className="px-2 py-2 md:px-6 md:py-10 relative isolate  lg:px-8">
       <div className="container mx-auto">
         <SectionHeading title="Faq" subtitle="Frequently Asked Questions" />
-        <div className="mx-auto max-w-2xl lg:text-center">
+        {/* <div className="mx-auto max-w-2xl lg:text-center">
           <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
             Frequently Asked Questions
           </h2>
@@ -26,9 +26,10 @@ const Faq = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere,
             assumenda
           </p>
-        </div>
-        <div className="mx-auto mt-8 max-w-3xl space-y-4 md:mt-16">
-          {Array.from({ length: 4 }).map((_, i) => (
+        </div> */}
+        <div className="mx-auto mt-8 max-w-3xl  md:mt-16">
+          {/* space-y-4 add space between faq */}
+          {Array.from({ length: 6 }).map((_, i) => (
             <div
               key={i}
               className="cursor-pointer rounded-md border border-gray-400 transition-all duration-200 bg-E3F2FC"

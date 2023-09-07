@@ -5,8 +5,8 @@ import LeftBgImage from "./LeftBgImage";
 
 const Footer = () => {
   return (
-    <footer className="m-10 relative isolate px-6 lg:px-8">
-      <LeftBgImage />
+    <footer className="mt-10 py-10 relative isolate px-6 lg:px-8 bg-footer-200">
+      {/* <LeftBgImage /> */}
       <div className="mx-auto flex max-w-6xl flex-col items-start space-x-8 md:flex-row pt-10">
         <div className="w-full px-4 md:w-1/2 lg:px-0">
           <h1 className="max-w-sm text-3xl font-bold">
@@ -29,20 +29,20 @@ const Footer = () => {
             </button>
           </form>
         </div>
-        <div className="mt-8 grid grid-cols-2 gap-6 md:mt-0 lg:w-3/4 lg:grid-cols-3">
+        <div className="m-8 grid grid-cols-2 gap-6 md:mt-0 lg:w-3/4 lg:grid-cols-3 text-center">
           {Array.from({ length: 3 }).map((_, i) => (
             <div key={i} className="mb-8 lg:mb-0">
               <p className="mb-6 text-lg font-semibold text-gray-700">
                 Company
               </p>
               <ul className="flex flex-col space-y-4 text-[14px] font-medium text-gray-500">
-                <li className="hover:underline cursor-pointer">About us</li>
-                <li className="hover:underline cursor-pointer">
+                <li className="cursor-pointer hover:font-bold">About us</li>
+                <li className="cursor-pointer hover:font-bold">
                   Company History
                 </li>
-                <li className="hover:underline cursor-pointer">Our Team</li>
-                <li className="hover:underline cursor-pointer">Our Vision</li>
-                <li className="hover:underline cursor-pointer">
+                <li className="cursor-pointer hover:font-bold">Our Team</li>
+                {/* <li className="cursor-pointer hover:font-bold">Our Vision</li> */}
+                <li className="cursor-pointer hover:font-bold">
                   Press Release
                 </li>
               </ul>
